@@ -44,6 +44,7 @@ h1 {
   background-color: #000276;
   color: #EBE5FC;
   font-size: 2rem;
+  text-align: center;
 }
 
 h2 {
@@ -75,4 +76,27 @@ body{
   background-color: #EBE5FC;
   color: #000276;
   border-radius: 20px;
+}
+
+.logo_image {
+  width: 60%;
+}
+
+.top_three_images {
+  max-height: 390px;
+  max-width: 221px;
+}
+
+.movielist_images {
+  max-height: 300px;
+  max-width: 170px;
+}
+
+.batman_big_image {
+  max-height: 400px;
+  max-width: 264px;
+}
+
+.logo_about_us {
+  max-width: 30%;
 }

@@ -5,36 +5,69 @@
 @import url("./variables.css");
 /* Feel free to add as many of these imports as you need */
 
-
-header, 
 footer {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #EBE5FC;
   background-color: #000276;
   width: 100%;
-}
-
-footer {
   text-align: center;
 }
 
 /* Navigation */
-nav ul {
-  padding: 0;
+
+nav,
+#menue-checkbox {
+  display: none;
 }
 
-nav li {
-  display: inline-block;
+#menue-checkbox:checked ~ nav {
+  display: block
+}
+
+header {
+  position: relative;
+  color: #EBE5FC;
+  background-color: #000276;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
+nav {
+  position: absolute;
+  background-color: #000276;
+  left: 0px;
 }
   
 nav a {
+  display: block;
   text-decoration: none;
   color: #efe5fc;
-  padding: 1.5rem;
+  padding: 10px 20px;
+  font-size: 1rem;
 }
 
 nav a:hover {
   text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+  nav {
+    display: block;
+    position: static;
+  }
+  .hamburger-icon {
+    display: none;
+  }
+  nav a {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 599px) {
+  .nav-bar-logo {
+    display: none;
+  }
 }
 
 /* Text */

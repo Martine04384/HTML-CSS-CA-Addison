@@ -18,6 +18,7 @@ footer {
   text-align: center;
 }
 
+/* Navigation */
 nav ul {
   padding: 0;
 }
@@ -36,6 +37,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Text */
 h1, h2, h3, h4 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -58,6 +60,7 @@ body{
   font-size: 1rem;
 }
 
+/* Homepage */
 .topthree{
   background-color: #EBE5FC;
 }
@@ -66,6 +69,7 @@ body{
   background-color: #EBE5FC;
 }
 
+/* CTA buttons*/
 .cta_button {
   background-color: #000276;
   color: #EBE5FC;
@@ -78,6 +82,7 @@ body{
   border-radius: 20px;
 }
 
+/* Images */
 .logo_image {
   width: 60%;
 }
@@ -101,6 +106,7 @@ body{
   max-width: 30%;
 }
 
+/* Forms */
 .form__input {
   display: block;
 }

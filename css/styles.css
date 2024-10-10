@@ -5,14 +5,6 @@
 @import url("./variables.css");
 /* Feel free to add as many of these imports as you need */
 
-footer {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #EBE5FC;
-  background-color: #000276;
-  width: 100%;
-  text-align: center;
-}
-
 /* Navigation */
 
 nav,
@@ -70,6 +62,16 @@ nav a:hover {
   }
 }
 
+/* footer */
+
+footer {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #EBE5FC;
+  background-color: #000276;
+  width: 100%;
+  text-align: center;
+}
+
 /* Text */
 h1, h2, h3, h4 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -100,6 +102,7 @@ body{
 
 .movielist{
   background-color: #EBE5FC;
+  box-sizing: border-box;
 }
 
 /* CTA buttons*/
@@ -107,9 +110,13 @@ body{
   background-color: #000276;
   color: #EBE5FC;
   border-radius: 20px;
+  padding: 8px 24px;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
 }
 
-.go_back {
+.go-back {
   background-color: #EBE5FC;
   color: #000276;
   border-radius: 20px;
@@ -117,7 +124,8 @@ body{
 
 /* Images */
 .logo_image {
-  width: 60%;
+  width: 50%;
+  height: auto;
 }
 
 .top_three_images {

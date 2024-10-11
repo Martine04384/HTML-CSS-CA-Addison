@@ -28,6 +28,7 @@ header {
 nav {
   position: absolute;
   background-color: #000276;
+  color: #efe5fc;
   left: 0px;
 }
   
@@ -104,6 +105,9 @@ body{
   background-color: #EBE5FC;
   box-sizing: border-box;
 }
+
+/* Contact us */
+
 
 /* CTA buttons*/
 .cta_button {

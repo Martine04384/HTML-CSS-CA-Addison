@@ -107,6 +107,49 @@ body{
 }
 
 /* Contact us */
+.contact {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  text-align: left;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.contact section {
+  padding: 24px;
+}
+
+input, 
+select, 
+textarea{
+  border: 1px, solid, #000276;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  height: 100%;
+}
+
+
+/* About us */ 
+/* JOBBER MED FLEXBOX HER */
+
+.about {
+  display: flex;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.about > * {
+  flex: 1;
+  justify-content: center;
+}
+
+.about__image {
+  width: 100%;
+}
 
 
 /* CTA buttons*/
@@ -147,9 +190,7 @@ body{
   max-width: 264px;
 }
 
-.logo_about_us {
-  max-width: 30%;
-}
+
 
 /* Forms */
 .form__input {

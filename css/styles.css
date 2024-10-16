@@ -71,6 +71,7 @@ footer {
   background-color: #000276;
   width: 100%;
   text-align: center;
+  padding: 16px;
 }
 
 /* Text */
@@ -95,6 +96,10 @@ body{
   font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
   font-size: 1rem;
   color: #000276;
+  min-height: 100vh;
+  margin: 0px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 /* Homepage */
@@ -173,27 +178,44 @@ textarea {
 
 .container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(3,1fr);
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.container img {
+  width: 100%;
+  grid-row: 1 /span 2;
+  align-self: center;
+}
+
+.movielist {
+  display: grid;
+  grid-template-columns: auto 1fr;
   grid-template-rows: 1fr auto;
-  grid-gap: 40px;
-  min-height: 400px;
+  gap: 20px;
+  padding: 20px;
 }
 
 .container div {
   background: #EBE5FC
 }
 
-/* CTA buttons*/
 .cta_button {
   background-color: #000276;
   color: #EBE5FC;
   border-radius: 20px;
-  padding: 8px 24px;
+  padding: 8px;
   font-size: 1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
+  text-align: center;
+  grid-column: 2;
+  grid-row: 2;
 }
 
+/* CTA buttons*/
 .go-back {
   background-color: #EBE5FC;
   color: #000276;
@@ -211,10 +233,7 @@ textarea {
   width: 221px;
 }
 
-.movielist_images {
-  max-height: 300px;
-  max-width: 170px;
-}
+
 
 .batman_big_image {
   max-height: 400px;

@@ -94,16 +94,19 @@ h2 {
 body{
   font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
   font-size: 1rem;
+  color: #000276;
 }
 
 /* Homepage */
 .topthree{
   background-color: #EBE5FC;
+  text-align: center;
 }
 
-.movielist{
-  background-color: #EBE5FC;
-  box-sizing: border-box;
+.topthree_imagelist {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /* Contact us */
@@ -111,7 +114,7 @@ body{
   display: flex;
   flex-direction:column;
   align-items: center;
-  text-align: left;
+  text-align: center;
   max-width: 1000px;
   margin: 24px auto;
 }
@@ -125,13 +128,15 @@ body{
   width: 500px;
   background-color: #000276;
   color: #EBE5FC;
+  text-align: left;
+  padding: 40px;
+  border-radius: 8%;
 }
 
 input, 
 select, 
 textarea{
   border: 1px, solid, #000276;
-  background-color: #000276;
   color: #EBE5FC;
   margin: 0;
   padding: 0;
@@ -142,25 +147,41 @@ textarea {
   height: 100px;
 }
 
-
 /* About us */ 
-/* JOBBER MED FLEXBOX HER */
-
 .about {
   display: flex;
   max-width: 1000px;
-  margin: 50px auto;
+  margin: 24px auto;
 }
 
 .about > * {
   flex: 1;
-  justify-content: center;
 }
 
 .about__image {
   width: 100%;
 }
 
+.about__text {
+  background-color: #EBE5FC;
+  box-sizing: border-box;
+  border-radius: 8%;
+  padding: 40px;
+}
+
+/* Product page */
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr auto;
+  grid-gap: 40px;
+  min-height: 400px;
+}
+
+.container div {
+  background: #EBE5FC
+}
 
 /* CTA buttons*/
 .cta_button {
@@ -186,8 +207,8 @@ textarea {
 }
 
 .top_three_images {
-  max-height: 390px;
-  max-width: 221px;
+  height: 390px;
+  width: 221px;
 }
 
 .movielist_images {
@@ -199,8 +220,6 @@ textarea {
   max-height: 400px;
   max-width: 264px;
 }
-
-
 
 /* Forms */
 .form__input {

@@ -55,10 +55,18 @@ nav a:hover {
   nav a {
     display: inline-block;
   }
+
+  .dropdown-mobile {
+    display: none;
+  }
 }
 
 @media (max-width: 599px) {
   .nav-bar-logo {
+    display: none;
+  }
+
+  .dropdown-desktop {
     display: none;
   }
 }
@@ -103,15 +111,19 @@ body{
 }
 
 /* Homepage */
+
 .topthree{
   background-color: #EBE5FC;
   text-align: center;
 }
 
 .topthree_imagelist {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 2;
+  gap: 10px;
+  max-width: 1000px;
+  margin: auto;
 }
 
 /* Contact us */
@@ -175,6 +187,9 @@ textarea {
 }
 
 /* Product page */
+.dropdown {
+  background-color: #EBE5FC;
+}
 
 .container {
   display: grid;

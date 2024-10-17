@@ -126,6 +126,12 @@ body{
   margin: auto;
 }
 
+.topthree_imagelist p {
+  background-color: #000276;
+  color: #EBE5FC;
+  font-weight: bold;
+}
+
 /* Contact us */
 .contact {
   display: flex;

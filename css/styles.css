@@ -6,6 +6,39 @@
 /* Feel free to add as many of these imports as you need */
 
 
+/* Text */
+h1, h2, h3, h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  background-color: #000276;
+  color: #EBE5FC;
+  font-size: 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  background-color: #EBE5FC;
+  color: #000276;
+}
+
+h3 {
+  font-size: 1rem;
+  background-color: #EBE5FC;
+  color: #000276;
+}
+
+body{
+  font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
+  font-size: 1rem;
+  color: #000276;
+  min-height: 100vh;
+  margin: 0px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
 
 /* Navigation */
 nav,
@@ -37,7 +70,7 @@ nav {
   background-color: #000276;
   color: #efe5fc;
   right: 0px;
-  margin-top: 48px;
+  margin-top: 24px;
 }
   
 nav a {
@@ -61,34 +94,6 @@ footer {
   width: 100%;
   text-align: center;
   padding: 16px;
-}
-
-/* Text */
-h1, h2, h3, h4 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-h1 {
-  background-color: #000276;
-  color: #EBE5FC;
-  font-size: 2rem;
-  text-align: center;
-}
-
-h2 {
-  font-size: 1rem;
-  background-color: #EBE5FC;
-  color: #000276;
-}
-
-body{
-  font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
-  font-size: 1rem;
-  color: #000276;
-  min-height: 100vh;
-  margin: 0px;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
 }
 
 /* Homepage */
@@ -131,6 +136,11 @@ body{
   text-align: center;
   padding-top: 16px;
   margin-top: 0 16px;
+}
+
+.top_three_images {
+  height: 390px;
+  width: 221px;
 }
 
 .topthree_imagelist p {
@@ -186,12 +196,8 @@ textarea {
 /* About us */ 
 .about {
   display: flex;
-  max-width: 1000px;
-  margin: 24px auto;
-}
-
-.about > * {
-  flex: 1;
+  flex-direction: column;
+  margin: 16px 40px;
 }
 
 .about__image {
@@ -201,60 +207,66 @@ textarea {
 .about__text {
   background-color: #EBE5FC;
   box-sizing: border-box;
-  border-radius: 8%;
-  padding: 40px;
+  padding: 16px;
+  margin-top: 16px;
 }
 
 /* Product page */
-.dropdown {
+.dropdown h2 {
+  text-align: center;
+  padding: 8px;
+}
+
+select {  
+  display: flex;
+  justify-content: center;
+  appearance: none; /* remove default appearance set by the browser */ /*https://sentry.io/answers/css-style-select-dropdown/*/
+  outline: none; /* remove the outline shown on focus */
+  cursor: pointer; /* change the mouse cursor icon */
+  color: #000276;  /* text color */
   background-color: #EBE5FC;
-}
-
-.dropdown-mobile {
-  display: none;
-}
-
-.dropdown-desktop {
-  display: none;
+  border-color: #EBE5FC;
+  border-radius: 20px;  /* round the border corners */
+  padding: 8px 60px;
+  font-family: verdana;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0px auto;
 }
 
 .container {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 40px;
-  max-width: 1000px;
-  margin: auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4,1fr);
+  gap: 16px;
+  margin: 16px 40px;
+  text-align: center;
 }
 
 .container img {
   width: 100%;
-  grid-row: 1 /span 2;
-  align-self: center;
-}
-
-.movielist {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: 1fr auto;
-  gap: 20px;
-  padding: 20px;
 }
 
 .container div {
-  background: #EBE5FC
+  background: #EBE5FC;
+}
+
+.movielist {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
 }
 
 .cta_button {
   background-color: #000276;
   color: #EBE5FC;
-  border-radius: 20px;
-  padding: 8px;
+  border-radius: 20cap;
+  padding: 8px 60px;
   font-size: 1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   text-align: center;
-  grid-column: 2;
-  grid-row: 2;
 }
 
 /* CTA buttons*/
@@ -264,13 +276,7 @@ textarea {
   border-radius: 20px;
 }
 
-/* Images */
-
-.top_three_images {
-  height: 390px;
-  width: 221px;
-}
-
+/* Product spesific */
 .batman_big_image {
   max-height: 400px;
   max-width: 264px;
@@ -281,8 +287,13 @@ textarea {
   display: block;
 }
 
+/* Screens */
 @media (max-width: 719px) {
   .nav-bar-logo {
+    display: none;
+  }
+
+  .dropdown-desktop {
     display: none;
   }
 }
@@ -298,7 +309,7 @@ textarea {
     display: none;
   }
 
-  
+
   nav {
     display: block;
     position: static;
@@ -306,6 +317,12 @@ textarea {
 
   nav a {
     display: inline-block;
+  }
+
+  .logo_image {
+    max-width: 720px;
+    object-position: center;
+    margin: 16px auto;
   }
 
   .topthree {
@@ -318,6 +335,70 @@ textarea {
     grid-template-rows: 2;
     gap: 10px;
     max-width: 1000px;
+    margin: 16px auto;
+  }
+
+  .dropdown-mobile {
+    display: none;
+  }
+
+  .dropdown-desktop {
+    background-color: #EBE5FC;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 56px;
+    max-width: 794px;
     margin: auto;
   }
+
+  .container img {
+    width: 100%;
+    grid-row: 1 /span 2;
+  }
+
+  .movielist_details {
+    grid-row: 1 /span 2;
+  }
+  
+  .movielist {
+    display: grid;
+    grid-template-columns: 170px 145px;
+    grid-template-rows: auto;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .cta_button {
+    background-color: #000276;
+    color: #EBE5FC;
+    border-radius: 20cap;
+    padding: 8px 24px;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    margin: 24px 40px;
+  }
+  
+  .about > * {
+    flex: 1;
+  }
+  
+  .about__image {
+    width: 100%;
+  }
+  
+  .about__text {
+    padding: 40px;
+  }
 }
+

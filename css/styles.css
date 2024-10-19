@@ -5,8 +5,9 @@
 @import url("./variables.css");
 /* Feel free to add as many of these imports as you need */
 
-/* Navigation */
 
+
+/* Navigation */
 nav,
 #menue-checkbox {
   display: none;
@@ -17,19 +18,26 @@ nav,
 }
 
 header {
-  position: relative;
   color: #EBE5FC;
   background-color: #000276;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.5rem;
-  padding: 20px;
+  position: relative;
+  display: flex;
+  justify-content: right;
+  padding: 0px 20px;
+}
+
+.nav-bar-logo {
+  padding: 0px;
 }
 
 nav {
   position: absolute;
   background-color: #000276;
   color: #efe5fc;
-  left: 0px;
+  right: 0px;
+  margin-top: 48px;
 }
   
 nav a {
@@ -42,33 +50,6 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
-}
-
-@media (min-width: 600px) {
-  nav {
-    display: block;
-    position: static;
-  }
-  .hamburger-icon {
-    display: none;
-  }
-  nav a {
-    display: inline-block;
-  }
-
-  .dropdown-mobile {
-    display: none;
-  }
-}
-
-@media (max-width: 599px) {
-  .nav-bar-logo {
-    display: none;
-  }
-
-  .dropdown-desktop {
-    display: none;
-  }
 }
 
 /* footer */
@@ -112,24 +93,56 @@ body{
 
 /* Homepage */
 
-.topthree{
-  background-color: #EBE5FC;
+/* IF LOGO IMAGE IS DEFINED AS NOT ESSENTIAL CONTENT!
+.welcome {
+  background-image: url(../assets/images/SquareEyes_Logo1.png);
+  max-width: 375px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 20vh;
+  background-position-x: center;
+  position: relative;
+  margin: 16px;
+} */
+
+.logo_image {
+  width: 100%;
+  object-fit: fill;
+  object-position: center;
+  margin: 16px 0px;
+}
+
+.welcome{
+  display: flex;
+  flex-direction: column;
   text-align: center;
+}
+
+.welcome a {
+  background-color: #000276;
+  color:#EBE5FC;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 40px;
+  border-radius: 20cap;
+}
+
+.topthree {
+  text-align: center;
+  padding-top: 16px;
+  margin-top: 0 16px;
+}
+
+.topthree_imagelist p {
+  background-color: #EBE5FC;
+  color: #000276;
+  font-weight: bold;
 }
 
 .topthree_imagelist {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: 2;
-  gap: 10px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.topthree_imagelist p {
-  background-color: #000276;
-  color: #EBE5FC;
-  font-weight: bold;
 }
 
 /* Contact us */
@@ -197,6 +210,14 @@ textarea {
   background-color: #EBE5FC;
 }
 
+.dropdown-mobile {
+  display: none;
+}
+
+.dropdown-desktop {
+  display: none;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -244,17 +265,11 @@ textarea {
 }
 
 /* Images */
-.logo_image {
-  width: 50%;
-  height: auto;
-}
 
 .top_three_images {
   height: 390px;
   width: 221px;
 }
-
-
 
 .batman_big_image {
   max-height: 400px;
@@ -264,4 +279,45 @@ textarea {
 /* Forms */
 .form__input {
   display: block;
+}
+
+@media (max-width: 719px) {
+  .nav-bar-logo {
+    display: none;
+  }
+}
+
+@media (min-width: 720px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  
+  .hamburger-icon {
+    display: none;
+  }
+
+  
+  nav {
+    display: block;
+    position: static;
+  }
+
+  nav a {
+    display: inline-block;
+  }
+
+  .topthree {
+    background-color: #EBE5FC;
+  }
+
+  .topthree_imagelist {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 2;
+    gap: 10px;
+    max-width: 1000px;
+    margin: auto;
+  }
 }

@@ -132,6 +132,11 @@ footer {
   border-radius: 20cap;
 }
 
+.welcome a:hover {
+  background-color: #EBE5FC;
+  color:#000276;
+}
+
 .topthree {
   text-align: center;
   padding-top: 16px;
@@ -267,6 +272,11 @@ select {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   text-align: center;
+}
+
+.cta_button:hover {
+  background-color: #EBE5FC;
+  color: #000276;
 }
 
 /* CTA buttons*/

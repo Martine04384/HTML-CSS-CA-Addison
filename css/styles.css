@@ -35,9 +35,14 @@ body{
   font-size: 1rem;
   color: #000276;
   min-height: 100vh;
-  margin: 0px;
+  margin: 0;
   display: grid;
   grid-template-rows: auto 1fr auto;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 /* Navigation */
@@ -139,8 +144,8 @@ footer {
 
 .topthree {
   text-align: center;
-  padding-top: 16px;
-  margin-top: 0 16px;
+  padding: 16px;
+  margin-top: 16px;
 }
 
 .top_three_images {

@@ -105,7 +105,7 @@ footer {
 
 /* IF LOGO IMAGE IS DEFINED AS NOT ESSENTIAL CONTENT!
 .welcome {
-  background-image: url(../assets/images/SquareEyes_Logo1.png);
+  background-image: url(../assets/images/square_eyes_logo.png);
   max-width: 375px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -173,20 +173,27 @@ footer {
   text-align: center;
   max-width: 1000px;
   margin: 24px auto;
+  position: relative;
 }
 
 .contact section {
   padding: 24px;
 }
 
+.contact p {
+  text-align: left;
+}
+
 .contact-form {
   box-sizing: border-box;
-  width: 500px;
+  min-width: 375px;
+  max-width: 700px;
   background-color: #000276;
   color: #EBE5FC;
   text-align: left;
   padding: 40px;
   border-radius: 8%;
+  position: relative;
 }
 
 input, 
@@ -195,12 +202,28 @@ textarea{
   border: 1px, solid, #000276;
   color: #EBE5FC;
   margin: 0;
-  padding: 0;
+  padding: 8px;
   width: fit-content;
+  border-radius: 8%;
 }
 
 textarea {
   height: 100px;
+}
+
+.send_message {
+  background-color: #EBE5FC;
+  color: #000276;
+  position:absolute;
+  padding: 4px 16px;
+  right: 40px;
+  bottom: 8px;
+  border-radius: 8%;
+}
+
+.send_message:hover {
+  background-color: #000276;
+  color:#EBE5FC;
 }
 
 /* About us */ 
@@ -217,8 +240,17 @@ textarea {
 .about__text {
   background-color: #EBE5FC;
   box-sizing: border-box;
+  border-radius: 8%;
   padding: 16px;
   margin-top: 16px;
+  position: relative;
+}
+
+.about__text a {
+  position: absolute;
+  right: 40px;
+  bottom: 8px;
+  text-decoration: none;
 }
 
 /* Product page */
@@ -310,6 +342,22 @@ select {
 
   .dropdown-desktop {
     display: none;
+  }
+
+  .about {
+    margin: 8px;
+  }
+
+  .about__text {
+    padding-bottom: 80px;
+  }
+
+  .about__text a {
+    left: 50%;
+    transform:translateX(-50);
+    right: auto;
+    background-color: #000276;
+    color: #EBE5FC;
   }
 }
 

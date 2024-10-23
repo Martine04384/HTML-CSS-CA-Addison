@@ -23,9 +23,22 @@
                 <a href="cart.html">Cart</a>
             </nav>
         </header>
-        <main> 
+        <main class="cart"> 
          <h1>Cart</h1>
             <section>
+                <h2>Order summary</h2>
+                <div class="order_summary">
+                    <p>Item</p>
+                    <p>Item name</p>
+                    <p>Price</p>
+                    <img src="./assets/images/square_eyes_batman.jpeg" alt="Picture of item in cart, Batman" class="order_summary_image">
+                    <p>Batman</p>
+                    <p>49$</p>
+                    <p>Total</p>
+                    <p>49$</p>
+                </div>
+            </section>
+            <section class="cart_details">
                 <form>
                     <fieldset>
                         <legend>Contact details</legend>
@@ -56,10 +69,9 @@
                         <label for="cvc">CVC</label>
                         <input type="number" name="cvc" id="cvc" class="form__input" required>
                     </fieldset>
-                    <button>Submit order</button>
                 </form>
+                <button class="submit_order">Submit order</button>
             </section>
-            <h2>Order summary</h2>
         </main>
         <footer>
             Copyright &copy;

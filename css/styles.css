@@ -165,33 +165,30 @@ footer {
   grid-template-rows: 2;
 }
 
-/* Contact us */
+/* Contact us and cart*/
 .contact {
   display: flex;
   flex-direction:column;
   align-items: center;
   text-align: center;
   max-width: 1000px;
-  margin: 24px auto;
+  margin: 16px auto;
   position: relative;
-}
-
-.contact section {
-  padding: 24px;
 }
 
 .contact p {
   text-align: left;
 }
 
-.contact-form {
+.contact-form, .cart_details, .order_summary {
   box-sizing: border-box;
   min-width: 375px;
-  max-width: 700px;
+  max-width: 1000px;
   background-color: #000276;
   color: #EBE5FC;
   text-align: left;
   padding: 40px;
+  margin: 16px 0;
   border-radius: 8%;
   position: relative;
 }
@@ -211,7 +208,20 @@ textarea {
   height: 100px;
 }
 
-.send_message {
+.order_summary_image {
+  max-width: 160px;
+}
+
+.order_summary {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 2fr 1fr;
+  gap: 16px;
+  background-color: #EBE5FC;
+  color: #000276;
+}
+
+.send_message, .submit_order {
   background-color: #EBE5FC;
   color: #000276;
   position:absolute;
@@ -221,7 +231,7 @@ textarea {
   border-radius: 8%;
 }
 
-.send_message:hover {
+.send_message:hover, submit_order:hover {
   background-color: #000276;
   color:#EBE5FC;
 }
@@ -358,6 +368,11 @@ select {
     right: auto;
     background-color: #000276;
     color: #EBE5FC;
+  }
+
+  .order_summary, .cart_details {
+    padding: 8px;
+    border-radius: 0;
   }
 }
 

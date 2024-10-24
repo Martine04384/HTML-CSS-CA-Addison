@@ -51,6 +51,10 @@ nav,
   display: none;
 }
 
+.hamburger-icon {
+  display: block;
+}
+
 #menue-checkbox:checked ~ nav {
   display: block
 }
@@ -76,6 +80,7 @@ nav {
   color: #efe5fc;
   right: 0px;
   margin-top: 24px;
+  z-index: 100;
 }
   
 nav a {

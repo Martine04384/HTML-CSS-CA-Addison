@@ -226,7 +226,7 @@ textarea {
   color: #000276;
 }
 
-.send-message, .submit-order {
+.send-message, .submit-order{
   background-color: #EBE5FC;
   color: #000276;
   position:absolute;
@@ -236,7 +236,7 @@ textarea {
   border-radius: 8%;
 }
 
-.send-message:hover, submit-order:hover {
+.send-message:hover, .submit-order:hover {
   background-color: #000276;
   color:#EBE5FC;
 }

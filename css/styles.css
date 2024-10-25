@@ -70,9 +70,7 @@ header {
   padding: 0px 20px;
 }
 
-.nav-bar-logo {
-  padding: 0px;
-}
+
 
 nav {
   position: absolute;
@@ -268,6 +266,45 @@ textarea {
   text-decoration: none;
 }
 
+/* Batman/product spesific page */
+.batman {
+  display: flex;
+  flex-direction: column;
+  margin: 16px auto;
+}
+
+.batman__image--big {
+  width: 100%;
+}
+
+.batman__image-trailer {
+  background-color: #EBE5FC;
+  color: #000276;
+  justify-content: center;
+}
+
+.batman__text {
+  background-color: #EBE5FC;
+  box-sizing: border-box;
+  border-radius: 8%;
+  padding: 16px;
+  margin-top: 16px;
+  position: relative;
+}
+
+.add-to-cart {
+  position: absolute;
+  right: 40px;
+  bottom: 8px;
+  text-decoration: none;
+  background-color: #000276;
+  color: #EBE5FC;
+}
+
+.go-back-batman {
+  justify-content: center;
+}
+
 /* Product page */
 .dropdown h2 {
   text-align: center;
@@ -399,6 +436,10 @@ select {
 
   nav a {
     display: inline-block;
+  }
+
+  .nav-bar-logo {
+    padding: 0px;
   }
 
   .logo__image {

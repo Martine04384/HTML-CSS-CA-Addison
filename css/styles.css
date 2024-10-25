@@ -22,6 +22,7 @@ h2 {
   font-size: 1.5rem;
   background-color: #EBE5FC;
   color: #000276;
+  text-align: center;
 }
 
 h3 {
@@ -271,16 +272,28 @@ textarea {
   display: flex;
   flex-direction: column;
   margin: 16px auto;
+  justify-content: center;
 }
 
-.batman__image--big {
-  width: 100%;
+.batman__image {
+  display: flex;
+  flex-direction: column;
+  margin: 16px auto;
+  text-align: center;
 }
 
 .batman__image-trailer {
   background-color: #EBE5FC;
   color: #000276;
   justify-content: center;
+  padding: 8px 16px;
+  border-radius: 8%;
+  margin: auto;
+}
+
+.batman__image-trailer:hover {
+  background-color: #000276;
+  color: #EBE5FC;
 }
 
 .batman__text {
@@ -289,16 +302,14 @@ textarea {
   border-radius: 8%;
   padding: 16px;
   margin-top: 16px;
-  position: relative;
 }
 
 .add-to-cart {
-  position: absolute;
-  right: 40px;
-  bottom: 8px;
   text-decoration: none;
   background-color: #000276;
   color: #EBE5FC;
+  justify-content: center;
+  margin: 16px auto;
 }
 
 .go-back-batman {

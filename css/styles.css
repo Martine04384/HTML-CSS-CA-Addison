@@ -60,7 +60,7 @@ nav,
   display: block
 }
 
-/* Made with chat gtp guidance on how to use aria-label for navigation */
+/* Made with chat gtp guidance on how to use aria-label for navigation 
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -70,7 +70,7 @@ nav,
   overflow: hidden;
   clip: rect(0,0,0,0);
   border: 0;
-}
+}*/
 
 header {
   color: #EBE5FC;

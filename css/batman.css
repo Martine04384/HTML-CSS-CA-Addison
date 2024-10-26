@@ -1,0 +1,56 @@
+@import url("./reset.css");
+@import url("./variables.css");
+
+/* Batman/product spesific page */
+.batman {
+    display: flex;
+    flex-direction: column;
+    margin: 16px auto;
+    justify-content: center;
+}
+  
+.batman__image {
+    display: flex;
+    flex-direction: column;
+    margin: 16px auto;
+    text-align: center;
+}
+  
+.batman__image-trailer {
+    background-color: #EBE5FC;
+    color: #000276;
+    justify-content: center;
+    padding: 8px 16px;
+    border-radius: 8%;
+    margin: auto;
+}
+  
+.batman__image-trailer:hover {
+    background-color: #000276;
+    color: #EBE5FC;
+}
+  
+.batman__text {
+    background-color: #EBE5FC;
+    box-sizing: border-box;
+    border-radius: 8%;
+    padding: 16px;
+    margin-top: 16px;
+}
+  
+.add-to-cart {
+    text-decoration: none;
+    background-color: #000276;
+    color: #EBE5FC;
+    justify-content: center;
+    margin: 16px auto;
+}
+  
+.go-back-batman {
+    justify-content: center;
+}
+  
+.batman__image--big {
+    max-height: 400px;
+    max-width: 264px;
+}

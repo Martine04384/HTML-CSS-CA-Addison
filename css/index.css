@@ -1,0 +1,87 @@
+@import url("./reset.css");
+@import url("./variables.css");
+
+/* Homepage */
+
+/* IF LOGO IMAGE IS DEFINED AS NOT ESSENTIAL CONTENT!
+.welcome {
+  background-image: url(../assets/images/square_eyes_logo.png);
+  max-width: 375px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 20vh;
+  background-position-x: center;
+  position: relative;
+  margin: 16px;
+} */
+
+.logo__image {
+    width: 100%;
+    object-fit: fill;
+    object-position: center;
+    margin: 16px 0px;
+}
+  
+.welcome{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+  
+.welcome a {
+    background-color: #000276;
+    color:#EBE5FC;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 40px;
+    border-radius: 20cap;
+}
+  
+.welcome a:hover {
+    background-color: #EBE5FC;
+    color:#000276;
+}
+  
+.topthree {
+    text-align: center;
+    padding: 16px;
+    margin-top: 16px;
+}
+  
+.topthree__imagelist__images {
+    height: 390px;
+    width: 221px;
+}
+  
+.topthree__imagelist p {
+    background-color: #EBE5FC;
+    color: #000276;
+    font-weight: bold;
+}
+
+.topthree__imagelist {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+@media (min-width: 720px) {
+    .logo__image {
+      max-width: 720px;
+      object-position: center;
+      margin: 16px auto;
+    }
+  
+    .topthree {
+      background-color: #EBE5FC;
+    }
+  
+    .topthree__imagelist {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: auto;
+      gap: 10px;
+      max-width: 1000px;
+      margin: 16px auto;
+    }
+}

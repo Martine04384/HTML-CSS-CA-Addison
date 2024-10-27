@@ -33,20 +33,18 @@ select {
     margin: 16px 40px;
     text-align: center;
 }
-  
-.container img {
-    width: 100%;
-}
-  
-.container div {
-    background: #EBE5FC;
-}
-  
+
 .movielist {
     display: flex;
     flex-direction: column;
     padding: 16px;
+    background: #EBE5FC;
+    border-radius: 20px;
 }
+  
+.container img {
+    width: 100%;
+}  
 
 @media (max-width: 719px) {
     .dropdown-desktop {
@@ -55,20 +53,36 @@ select {
 }
 
 @media (min-width: 720px) {
-    .dropdown-mobile {
+    .dropdown-mobile, .dropdown-desktop {
         display: none;
     }
 
-    .dropdown-desktop {
+    .dropdown-desktop a {
+        text-decoration: none;
+    }
+
+    .dropdown:hover .dropdown-desktop {
+        display: block;
+        padding: 16px;
+        margin: 16px auto;
         background-color: #EBE5FC;
+        list-style: none;
     }
 
     .container {
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: 56px;
-        max-width: 794px;
+        max-width: 1000px;
         margin: auto;   
+    }
+
+    .movielist {
+        display: grid;
+        grid-template-columns: 170px 145px;
+        grid-template-rows: auto;
+        gap: 16px;
+        padding: 16px;
     }
 
     .container img { 
@@ -78,13 +92,5 @@ select {
 
     .movielist_details {
         grid-row: 1 /span 2;
-    }
-
-    .movielist {
-        display: grid;
-        grid-template-columns: 170px 145px;
-        grid-template-rows: auto;
-        gap: 16px;
-        padding: 16px;
     }
 }

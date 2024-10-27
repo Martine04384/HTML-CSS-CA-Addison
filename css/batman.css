@@ -12,8 +12,13 @@
 .batman__image {
     display: flex;
     flex-direction: column;
-    margin: 16px auto;
+    margin: 0 auto;
     text-align: center;
+}
+
+.batman__image--big {
+    max-height: 400px;
+    max-width: 264px;
 }
   
 .batman__image-trailer {
@@ -21,8 +26,8 @@
     color: #000276;
     justify-content: center;
     padding: 8px 16px;
-    border-radius: 8%;
-    margin: auto;
+    border-radius: 20px;
+    margin: 16px auto 0;
 }
   
 .batman__image-trailer:hover {
@@ -31,26 +36,57 @@
 }
   
 .batman__text {
-    background-color: #EBE5FC;
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
-    border-radius: 8%;
-    padding: 16px;
-    margin-top: 16px;
+    min-width: 264px;
+    max-width: 95%;
+    margin: 0 auto;
 }
   
 .add-to-cart {
     text-decoration: none;
     background-color: #000276;
     color: #EBE5FC;
-    justify-content: center;
     margin: 16px auto;
+}
+
+.batman__text__price {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
   
 .go-back-batman {
+    display: flex;
     justify-content: center;
+    margin: 16px auto;
+    max-width: 300px;
+    text-decoration: none;
 }
-  
-.batman__image--big {
-    max-height: 400px;
-    max-width: 264px;
+
+@media (min-width: 720px) {
+    .batman {
+        display: flex;
+        flex-direction: row;
+        margin: 16px auto;
+        background-color: #EBE5FC;
+        border-radius: 20px;
+        padding: 16px;
+        max-width: 1000px;
+    }
+
+    .batman__image {
+        margin: 16px 8px;
+    }
+
+    .batman__text {
+        margin: 0px 8px;
+    }
+
+    .batman__text__price {
+        margin: auto;
+        align-self: flex-end;
+        text-align: center;
+    }
 }

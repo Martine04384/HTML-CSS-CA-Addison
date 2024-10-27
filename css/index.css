@@ -47,22 +47,22 @@
     padding: 16px;
     margin-top: 16px;
 }
-  
-.topthree__imagelist__images {
-    height: 390px;
-    width: 221px;
-}
-  
-.topthree__imagelist p {
-    background-color: #EBE5FC;
-    color: #000276;
-    font-weight: bold;
-}
 
 .topthree__imagelist {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+}
+
+.topthree__imagelist p {
+    background-color: #EBE5FC;
+    color: #000276;
+    font-weight: bold;
+}
+  
+.topthree__imagelist__images {
+    height: 390px;
+    width: 221px;
 }
 
 @media (min-width: 720px) {

@@ -1,9 +1,22 @@
 @import url("./reset.css");
 @import url("./variables.css");
 
-/* Using the same styling as cart */
-.checkout-success {
+main, h1 {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    padding: 80px;
     margin: 16px auto;
+    justify-content: center;
+    text-align: center;
+    background-color: #EBE5FC;
+    color: #000276;
+}
+
+.symbol {
+    color: #EBE5FC;
+    background-color: #000276;
+    padding: 24px;
+    margin: auto;
+    border-radius: 50%;
+    font-size: 4rem;
 }

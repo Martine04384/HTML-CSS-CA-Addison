@@ -22,11 +22,12 @@
                 <a href="cart.html">Cart</a>
             </nav>
         </header>
-        <main class="cart"> 
+        <main> 
          <h1>Cart</h1>
-            <section>
+         <div class="cart">
+            <section class=order-summary>
                 <h2>Order summary</h2>
-                <div class="order-summary">
+                <div class="order-summary__details">
                     <p>Item</p>
                     <p>Item name</p>
                     <p>Price</p>
@@ -34,12 +35,13 @@
                     <p>Batman</p>
                     <p>$15</p>
                     <p>Total</p>
+                    <p></p>
                     <p>$15</p>
                 </div>
             </section>
-            <section>
-                <h2>Billing details</h2>
-                <form class="cart-details">
+            <section class="billing">
+                <h2>Contact and billing details</h2>
+                <form class="billing__details">
                     <fieldset>
                         <legend>Contact details</legend>
                         <label for="name">Name</label>
@@ -72,6 +74,7 @@
                 </form>
                 <a href="checkout-complete.html" class="submit-order">Submit order</a>
             </section>
+         </div>
         </main>
         <footer>
             <p>Contact us on:</p>

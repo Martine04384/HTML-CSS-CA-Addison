@@ -29,7 +29,7 @@
     margin: 16px auto;
 }
 
-.billing__details, h2 {
+.billing__details {
     color: #000276;
     background-color: #EBE5FC;
 }

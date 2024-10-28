@@ -53,8 +53,28 @@ select {
 }
 
 @media (min-width: 720px) {
-    .dropdown-mobile, .dropdown-desktop {
+    .dropdown-mobile {
         display: none;
+    }
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown h2 {
+        padding-bottom: 8px;
+    }
+
+    .dropdown-desktop {
+        position: absolute;
+        z-index: 100;
+        top: 100%;
+        background-color: #EBE5FC;
+        font-size: 1.5rem;
+        list-style: none;
+        display: none;
+        padding: 16px 40%;
+        margin: 0;
     }
 
     .dropdown-desktop a {
@@ -63,10 +83,11 @@ select {
 
     .dropdown:hover .dropdown-desktop {
         display: block;
-        padding: 16px;
-        margin: 16px auto;
-        background-color: #EBE5FC;
-        list-style: none;
+    }
+
+    .dropdown a:hover {
+        background-color: #000276;
+        color:#EBE5FC;
     }
 
     .container {

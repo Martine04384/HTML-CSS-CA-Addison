@@ -3,7 +3,7 @@
 
 /* Cart*/
 
-.cart {
+main {
     min-width: 350px;
     width: 95%;
     max-width: 720px;
@@ -25,13 +25,17 @@
 .billing__details, .order-summary__details {
     box-sizing: border-box;
     text-align: left;
-    padding: 8px;
+    padding: 16px;
     margin: 16px auto;
 }
 
 .billing__details {
     color: #000276;
     background-color: #EBE5FC;
+}
+
+fieldset div{
+    padding: 16px 0;
 }
   
 input, 
@@ -72,14 +76,13 @@ fieldset {
         flex-direction: row-reverse;
         gap: 16px;
         width: 100%;
-        margin: 16px;
+        margin: 16px auto;
     }
 
     .order-summary, .billing {
         width: 50%;
       }
 
-      
       .billing__details, .order-summary__details {
         padding: 20px;
         border-radius: 20px;

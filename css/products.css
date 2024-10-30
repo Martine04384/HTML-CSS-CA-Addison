@@ -5,6 +5,7 @@
 .dropdown h2 {
     text-align: center;
     padding: 8px;
+    cursor: pointer;
 }
   
 select {  
@@ -68,12 +69,14 @@ select {
     .dropdown-desktop {
         position: absolute;
         z-index: 100;
-        top: 100%;
+        top: 40px;
+        left: 35%;
+        max-width: 30%;
+        width: 30%;
         background-color: #EBE5FC;
         font-size: 1.5rem;
         list-style: none;
         display: none;
-        padding: 16px 40%;
         margin: 0;
     }
 
@@ -93,17 +96,15 @@ select {
     .container {
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        gap: 56px;
+        grid-template-rows: repeat(2,1fr);
         max-width: 1000px;
-        margin: auto;   
+        margin: 16px auto;   
     }
 
     .movielist {
         display: grid;
         grid-template-columns: 170px 145px;
         grid-template-rows: auto;
-        gap: 16px;
-        padding: 16px;
     }
 
     .container img { 

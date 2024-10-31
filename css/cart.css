@@ -5,8 +5,6 @@
 
 main {
     min-width: 350px;
-    width: 95%;
-    max-width: 720px;
 }
 
 .order-summary__details {
@@ -54,20 +52,9 @@ fieldset {
 }
   
 .submit-order {
-    background-color: #000276;
-    color: #EBE5FC;
-    text-decoration: none;
-    font-size: 1.5rem;
-    padding: 4px 16px;
-    border-radius: 20px;
     display: flex;
     justify-content: center;
     margin: 16px auto;
-}
-  
-.submit-order:hover {
-    background-color: #EBE5FC;
-    color: #000276;
 }
 
 @media (min-width: 720px) {

@@ -6,10 +6,13 @@ body {
   box-sizing: border-box;
   min-height: 100vh;
   margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 main {
   max-width: 1000px;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -17,23 +20,23 @@ main {
 h1, h2, h3, h4 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
+  font-weight:bold;
 }
 
 h1 {
   background-color: #000276;
   color: #EBE5FC;
   font-size: 2rem;
-  text-align: center;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   background-color: #EBE5FC;
   color: #000276;
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   background-color: #EBE5FC;
   color: #000276;
 }
@@ -42,11 +45,6 @@ p {
   font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
   font-size: 1rem;
   color: #000276;
-}
-
-body{
-  display: grid;
-  grid-template-rows: auto 1fr auto;
 }
 
 /* Navigation */
@@ -108,7 +106,7 @@ nav a:hover {
     justify-content: space-between;
     align-items: baseline;
   }
-  
+
   .hamburger-icon {
     display: none;
   }
@@ -120,6 +118,7 @@ nav a:hover {
 
   nav a {
     display: inline-block;
+    padding: 0 0 0 20px;
   }
 
   .nav-bar-logo {
@@ -133,12 +132,13 @@ nav a:hover {
   background-color: #000276;
   color: #EBE5FC;
   border-radius: 20cap;
-  padding: 8px 60px;
+  padding: 4px 24px;
   font-size: 1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
+  margin: 16px auto;
 }
 
 .cta__button:hover {
@@ -146,15 +146,9 @@ nav a:hover {
   color: #000276;
 }
 
-.go-back {
-  background-color: #EBE5FC;
-  color: #000276;
-  border-radius: 20px;
-}
-
 @media (min-width: 720px) {
   .cta__button {
-    padding: 8px 24px;
+    padding: 10px 24px;
   }
 }
 

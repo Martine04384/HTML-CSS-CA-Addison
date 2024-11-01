@@ -12,6 +12,8 @@ main {
     margin: 16px auto;
     background-color: #EBE5FC;
     color: #000276;
+    border: 0.25rem solid #000276;
+    border-radius: 8%;
 }
 
 h1 {

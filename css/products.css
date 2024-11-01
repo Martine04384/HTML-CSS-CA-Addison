@@ -8,21 +8,29 @@
     cursor: pointer;
 }
   
-select {  /*https://sentry.io/answers/css-style-select-dropdown/*/
+.dropdown-mobile, .dropdown-mobile h3{  /*https://sentry.io/answers/css-style-select-dropdown/*/
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    color: #000276;  
+    background-color: #EBE5FC;
+    border-radius: 20px;  
+    margin: 0 auto;
+    padding: 8px 8px 16px 8px;
+}
+
+select {
     appearance: none; /* remove default appearance set by the browser */ 
     outline: none; /* remove the outline shown on focus */
     cursor: pointer; 
     color: #000276;  
     background-color: #EBE5FC;
-    border-color: #EBE5FC;
-    border-radius: 20px;  
-    padding: 8px 60px;
+    border-color: #000276;
+    border-radius: 20px;
     font-family: verdana;
     font-size: 1rem;
     font-weight: bold;
-    text-align: center;
+    padding: 8px 60px;
     margin: 0px auto;
 }
   

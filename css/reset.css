@@ -168,6 +168,11 @@ footer {
   padding: 16px;
 }
 
+footer a {
+  color:#EBE5FC;
+  text-decoration: none;
+}
+
 footer p {
   color:#EBE5FC;
 }

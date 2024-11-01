@@ -65,7 +65,7 @@ header {
   color: #EBE5FC;
   background-color: #000276;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   position: relative;
   display: flex;
   justify-content: right;
@@ -77,7 +77,7 @@ nav {
   background-color: #000276;
   color: #efe5fc;
   right: 0px;
-  margin-top: 24px;
+  margin-top: 38px;
   z-index: 100;
 }
   

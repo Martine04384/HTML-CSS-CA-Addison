@@ -86,7 +86,7 @@ nav a {
   text-decoration: none;
   color: #efe5fc;
   padding: 10px 20px;
-  font-size: 1rem;
+  font-size: 1.5rem,
 }
 
 nav a:hover {
@@ -119,6 +119,7 @@ nav a:hover {
   nav a {
     display: inline-block;
     padding: 0 0 0 20px;
+    font-size: 1rem;
   }
 
   .nav-bar-logo {
